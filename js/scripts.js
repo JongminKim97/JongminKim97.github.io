@@ -5,3 +5,10 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+
+// let t=0
+// bar.style.width=0
+// const barAnimation = setInterval(()=>{
+//     bar.style.width=t+'%'
+//     t++>=72 && clearInterval(barAnimation)
+// },10)

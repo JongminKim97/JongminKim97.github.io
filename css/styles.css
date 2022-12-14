@@ -10,6 +10,89 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ .chart-skills {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+  position: relative;
+  width: 250px;
+  height: 125px;
+  }
+  .chart-skills *,
+  .chart-skills::before {
+  box-sizing: border-box;
+  }
+  .chart-skills::before {
+  position: absolute;
+  content: '';
+  width: inherit;
+  height: inherit;
+  border: 45px solid rgba(211, 211, 211, .3);
+  border-bottom: none;
+  border-top-left-radius: 175px;
+  border-top-right-radius: 175px;
+  }
+  .chart-skills li {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border: 45px solid;
+  border-top: none;
+  border-bottom-left-radius: 175px;
+  border-bottom-right-radius: 175px;
+  transform-origin: 50% 0;
+  }
+  .chart-skills li:nth-child(1) {
+  z-index: 4;
+  border-color: green;
+  animation: chartAni1 2s linear 1 forwards;
+  }
+  .chart-skills li:nth-child(2) {
+  z-index: 3;
+  border-color: steelblue;
+  animation: chartAni2 0s linear 1 forwards;
+  }
+  span{display:None;}
+
+  @keyframes chartAni1{
+      0%{transform: rotateZ(0);}
+      35%{transform: rotateZ(63deg)}
+      100%{transform: rotateZ(63deg)}
+  }
+  @keyframes chartAni2{
+      0%{transform: rotateZ(0);}
+      60%{transform: rotateZ(100deg)}
+      100%{transform: rotateZ(180deg)}
+  }
+
+  
+/* 
+.progress-bar{
+  width: 100%;
+  height: 30px;
+  background-color: #dedede;
+  font-weight: 600;
+  font-size: .8rem;
+}
+.progress-bar .progress{
+  width: 72%;
+  height: 30px;
+  padding: 0;
+  text-align: center;
+  background-color: #4F98FF;
+  color: #111;
+} */
+
+
+
+
+
+
+ /*
+ */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

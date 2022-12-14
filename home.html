@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>DSME - Anomaly Detection Webpage</title>
+        <link rel="icon" type="image/x-icon" href="assets/DSME_ICON.png" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar--> <!--navigation bar on top-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <button style="background-color:#212529; border-color:transparent" type="button" class="btm_image" id="img_btn" onclick="location.href='home.html'"><img src="assets/LOGO.svg" alt="" height="30"> </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Services</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container px-4 px-lg-5">
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div class="col-lg-7">
+                    <iframe width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42171.125592635675!2d128.67920994560657!3d34.87737564244772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35692dc514ae3f29%3A0xa26877ca02bf183e!2z64yA7Jqw7KGw7ISg7ZW07JaRIOyhsOyEoOyGjA!5e0!3m2!1sko!2skr!4v1671032052886!5m2!1sko!2skr" ></iframe>
+                </div>
+                <div class="col-lg-5">
+                    <h3 class="font-weight-light">Trial Progress (Ongoing Vessel)</h3>
+                    <p>Press button to activate surveillance system.</p>
+                    <a class="btn btn-primary" href="#" onclick="location.href='detection.html'">Anomaly Detection</a>
+                </div>
+            </div>
+            <!-- Content Row-->
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title" style="text-align:center">Fuel Consumption</h4>
+                            <p class="card-text">
+                                <center><img src="assets/Fuel Consumption.png" alt="" height="180"></center>
+                                <center><img src="assets/Fuel Consumption2.png" alt="" height="180" style="margin: 20px 0"></center>
+                            </p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title" style="text-align: center;">Annual Trial Status <br> (Actual / Planned)</h4>
+                            <p class="card-text">
+                                <style>
+                                    .graph{height: 30px; margin: 0 0 10px; background:#ccc;border-radius: 30px;}
+                                    .graph span {display:block; padding: 0 10px;width: 75%; height:30px; line-height: 30px; text-align:right; border-radius:30px;
+                                    box-sizing: border-box; color: #fff; }
+                                    .graph.stack1 span {background:skyblue; animation: stack1 2s 1;}
+                                    .graph.stack2 span {background:skyblue; animation: stack2 2s 1;}
+                                    .graph.stack3 span {background:skyblue; animation: stack3 2s 1;}
+                                    .graph.stack4 span {background:skyblue; animation: stack4 2s 1;}
+                                    @keyframes stack1{
+                                        0%{width: 0; opacity: 0;}
+                                        100%{width: 30%; opacity: 1;}
+                                    }
+                                    @keyframes stack2{
+                                        0%{width: 0; opacity: 0;}
+                                        100%{width: 36%; opacity: 1;}
+                                    }
+                                    @keyframes stack3{
+                                        0%{width: 0; opacity: 0;}
+                                        100%{width: 67%; opacity: 1;}
+                                    }
+                                    @keyframes stack4{
+                                        0%{width: 0; opacity: 0;}
+                                        100%{width: 33%; opacity: 1;}
+                                    }
+                                </style>
+                                <ul class="chart-skills">
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <div style="text-align:center; padding:0 0 30px 0">Overall (35%)</div>
+                                <div class="graph stack1">
+                                    <span style="width:30%">LNG(30%)</span> 
+                                </div>
+                                <div class="graph stack2">
+                                    <span style="width:36%">COT(36%)</span>
+                                </div>
+                                <div class="graph stack3">
+                                    <span style="width:67%">LPG(67%)</span>
+                                </div>
+                                <div class="graph stack4">
+                                    <span style="width:33%">CONTI(33%)</span>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title" style="text-align:center">Claim List</h4>
+                            <p class="card-text">
+                                <ul class="chart-skills">
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <h4 style="text-align:center; padding:0 0 30px 0">(3/9)</h4>
+                                <h5 style="padding: 0 20px">Claim 1 (completed)</h5>
+                                <h5 style="padding: 0 20px">Claim 2 (completed)</h5>
+                                <h5 style="padding: 0 20px">Claim 3 (completed)</h5>
+                                <h5 style="padding: 0 20px">Claim 4 (in progress)</h5>
+                                <h5 style="padding: 0 20px">Claim 5 </h5>
+                                <h5 style="padding: 0 20px">Claim 6 </h5>
+                            </p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
